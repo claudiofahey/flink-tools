@@ -15,5 +15,8 @@ appParameters:
   #parallelism: "1"
 imageRef:
   name: "1.10.0-2.12-hadoop2.8.3"
+taskManager:
+  heap: "2684354560"      # 2.5Gi
+  memory: "5368709120"    # 5Gi
 clusterConfiguration:
-  taskmanager.memory.jvm-metaspace.size: "536870912"  # 512 MiB
+  taskmanager.memory.jvm-metaspace.size: "2147483648"  # 2 GiB
